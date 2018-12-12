@@ -4,6 +4,5 @@ CREATE TABLE reservations (
   table_id integer NOT NULL,
   reserved_date DATE NOT NULL,
   reserved_hour integer NOT NULL,
-  notes TEXT,
   CONSTRAINT order_constraint UNIQUE (table_id, reserved_date, reserved_hour)
 );
